@@ -1,105 +1,91 @@
 <template>
     <div class="service-second">
         <div class="container">
+            <!-- <img src="@/assets/service/project-1.jpg" alt="">
+            <img src="@/assets/service/project-2.jpg" alt=""> -->
             <p>OUR PROJECTS</p>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
         <swiper
-        Navigation
-        loop=true
-     :pagination="{ clickable: true }"
-    :slides-per-view="3"
+    :space-between="50"
+    loop=true
+    :pagination="{ clickable : true }"
+    grabCursor
+    :autoplay="{delay:4000}"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
+    :breakpoints="{
+        576:{
+            slidesPerView:1,
+            spaceBetween:10
+        },
+        700:{
+            slidesPerView:2,
+            spaceBetween:20
+        },
+        1000:{
+            slidesPerView:3,
+            spaceBetween:20
+        }
+    }"
   >
-  
-    <swiper-slide>
-        <div class="swiper-card">
-            <img src="@/assets/service/project-1.jpg" alt="">
-            <div class="inner">
-                <p>work tittle</p>
-                <p>work description</p>
-            </div>
-        </div>
+    <swiper-slide><img src="@/assets/service/project-1.jpg" alt=""> 
+    <div class="inner">
+        <p>work tittle</p>
+        <p>work description</p>
+    </div>
     </swiper-slide>
-    <swiper-slide> 
-        <div class="swiper-card">
-            <img src="@/assets/service/project-2.jpg" alt="">
-            <div class="inner">
-                <p>work tittle</p>
-                <p>work description</p>
-            </div>
-        </div>
-        </swiper-slide>
-    <swiper-slide> 
-        <div class="swiper-card">
-            <img src="@/assets/service/project-3.jpg" alt="">
-            <div class="inner">
-                <p>work tittle</p>
-                <p>work description</p>
-            </div>
-        </div>
-        </swiper-slide>
-    <swiper-slide> 
-        <div class="swiper-card">
-            <img src="@/assets/service/project-4.jpg" alt="">
-            <div class="inner">
-                <p>work tittle</p>
-                <p>work description</p>
-            </div>
-        </div>
-        </swiper-slide>
-    <swiper-slide> 
-        <div class="swiper-card">
-            <img src="@/assets/service/project-5.jpg" alt="">
-            <div class="inner">
-                <p>work tittle</p>
-                <p>work description</p>
-            </div>
-        </div>
-        </swiper-slide>
-    <swiper-slide> 
-        <div class="swiper-card">
-            <img src="@/assets/service/project-6.jpg" alt="">
-            <div class="inner">
-                <p>work tittle</p>
-                <p>work description</p>
-            </div>
-        </div>
-        </swiper-slide>
+    <swiper-slide><img src="@/assets/service/project-2.jpg" alt="">
+    <div class="inner">
+        <p>work tittle</p>
+        <p>work description</p>
+    </div>
+    </swiper-slide>
+    <swiper-slide><img src="@/assets/service/project-3.jpg" alt="">
+    <div class="inner">
+        <p>work tittle</p>
+        <p>work description</p>
+    </div>
+    </swiper-slide>
+    <swiper-slide><img src="@/assets/service/project-1.jpg" alt="">
+    <div class="inner">
+        <p>work tittle</p>
+        <p>work description</p>
+    </div>
+    </swiper-slide>
+    <swiper-slide><img src="@/assets/service/project-2.jpg" alt="">
+    <div class="inner">
+        <p>work tittle</p>
+        <p>work description</p>
+    </div>
+    </swiper-slide>
+    <swiper-slide><img src="@/assets/service/project-3.jpg" alt="">
+    <div class="inner">
+        <p>work tittle</p>
+        <p>work description</p>
+    </div>
+    </swiper-slide>
   </swiper>
-
 
   </div>
     </div>
 </template>
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import 'swiper/components/pagination/pagination.scss';
+import SwiperCore, { Pagination, A11y ,Autoplay } from 'swiper';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
   import 'swiper/swiper.scss';
-  import 'swiper/components/scrollbar/scrollbar.scss';
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
-import 'swiper/swiper.scss';
+  import 'swiper/components/pagination/pagination.scss';
+
+  SwiperCore.use([Pagination, A11y,Autoplay]);
 export default {
     name:"service-second",
     components: {
-        Swiper,
-        SwiperSlide,
+         Swiper,
+      SwiperSlide,
     },
     methods: {
-      onSwiper(swiper) {
-        console.log(swiper);
-      },
-      onSlideChange() {
-        console.log('slide change');
-      },
     },
-     data() {
-      return {
-        parallaxSwiperWidth:0,
-        
-      }
-     }
 }
 </script>
 <style lang="scss">
@@ -124,6 +110,11 @@ export default {
     @content;
   }
 }
+@mixin maxmobile2 {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
 @mixin maxtiny {
   @media (max-width: 350px) {
     @content;
@@ -141,39 +132,68 @@ export default {
 .service-second{
     margin: 150px 0;
     text-align: center;
-    .swiper-slide {
-    padding: 10px 10px 50px;
-    @include maxmobile{
-                    padding: 3px;
-                }
-}
-    .swiper-container{
-        overflow-y: visible;
-            height: 460px;
-            @include maxlarge{
-                height: 400px;
-            }
-            @include maxmediam{
-                height: 300px;
-            }
-            @include maxsmall{
-                height: 230px;
-            }
-            @include maxmobile{
-                height: 200px;
-            }
-            @include maxtiny{
-                height: 150px;
-            }
+    .container{
+            overflow: hidden;
+    padding-bottom: 100px;
     }
-    .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #EC2943!important;
+    .swiper-pagination-bullets {
+    bottom: -30px!important;
 }
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+.swiper-container {
+overflow: visible;
 }
+    .swiper-slide {
+        position: relative;
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+            @include maxmobile2{
+            width: 76%;
+            }
+        }
+        &:hover .inner{
+            bottom: 0;
+            transition: all .7s linear;
+        }
+        .inner{
+            position: absolute;
+            bottom: -50%;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: #EC2943;
+            padding-top: 20px;
+            @include maxsmall{
+                       height: 70px;
+                       padding-top: 10px;
+                    }
+            @include maxmobile2{
+            width: 76%;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+            p{
+                margin-bottom:0px ;
+                color: white;
+                &:first-of-type{
+                    font-size: 24px;
+                    @include maxsmall{
+                        font-size: 18px;
+                    }
+                }
+                &:last-of-type{
+                    font-size: 15px;
+                     @include maxsmall{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+}
+    
+
     .container > p:first-of-type{
         font-size: 45px;
     }
@@ -181,58 +201,6 @@ export default {
         color: gray;
         margin-bottom: 40px;
     }
-    .swiper-wrapper .swiper-slide .swiper-card{
-        position: relative;
-        overflow: hidden;
-        &:hover .inner{
-                bottom: 0;
-                transition: all .5s linear;
-            }
-        &:hover img{
-                transform: scale(1.3);
-                transition: all .5s linear;
-            }
-        img{
-            width: 100%;
-        }
-        .inner{
-            position: absolute;
-            bottom: -100%;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background-color: #EC2943;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            p{
-                    @include maxlarge{
-                    margin-bottom: 0;
-                }
-                @include maxmediam{
-                }
-                @include maxsmall{
-                    font-size: 12px;
-                }
-                @include maxmobile{
-                     font-size: 11px;
-                }
-            }
-            @include maxlarge{
-                height: 80px;
-            }
-            @include maxmediam{
-                height: 70px;
-            }
-            @include maxsmall{
-                height: 60px;
-            }
-            @include maxmobile{
-                height: 40px;
-                padding: 0;
-            }
-            
-        }
-    }
+    
 }
 </style>
