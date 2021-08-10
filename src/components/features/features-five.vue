@@ -2,7 +2,7 @@
     <div class="features-five">
         <div class="container">
             <p>Mentioned in</p>
-            <img src="@/assets/features/last.svg" alt="">
+            <img src="@/assets/features/last.svg" alt="" data-aos="flip-up">
         </div>
     </div>
 </template>

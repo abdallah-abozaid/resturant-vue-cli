@@ -3,10 +3,10 @@
         <div class="container">
         <div class="row">
             <div class="first-com col-md-6">
-               <img src="@/assets/features/security.svg" alt="">
+               <img src="@/assets/features/fetur2.svg" alt="" data-aos="fade-up">
             </div>
-            <div class="sec-com col-md-6">
-                 <p>Absolute security</p>
+            <div class="sec-com col-md-6" data-aos="fade-up">
+                 <p>best service</p>
                 <p>Itaque his sapiens semper vacabit. Qualis ista philosophia est, quae non interitum afferat pravitatis, sed sit contenta mediocritate vitiorum? Quid de Platone aut de Democrito loquar? Quis istud possit, inquit negare?</p>
                 <hr>
                 <p>Estne, quaeso, inquam, sitienti in bibendo voluptas? Duo Reges: constructio interrete.</p>
@@ -79,6 +79,9 @@ export default {
         overflow: hidden;
         @include maxlarge{
            padding-top: 2%;
+            }
+            @include maxsmall{
+           text-align: center;
             }
         p:first-of-type{
             font-size: 45px;

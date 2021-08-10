@@ -20,7 +20,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 //---------------------------------------------------------------------------
 @mixin maxlarge {
   @media (max-width: 1200px) {
@@ -62,7 +61,6 @@ export default {
         text-align: center;
         font-size: 30px;
         color: #6b4c5b;
-       font-family: 'Permanent Marker', cursive;
        @include maxlarge{
                 font-size: 24px;
             }

@@ -1,26 +1,26 @@
 <template>
-    <div class="about-six">
+    <div class="about-six  overflow-hidden">
         <div class="container">
         <div class="card-deck">
   <div class="card">
-    <img src="@/assets/about/one.svg" class="card-img-top" alt="...">
+    <img src="@/assets/about/one.svg" class="card-img-top" alt="..." data-aos="fade-down">
     <div class="card-body">
       <h5 class="card-title">Activity Notifications</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consim in eros elementum tristique.</p>
     </div>
   </div>
   <div class="card">
-    <img src="@/assets/about/three.svg" class="card-img-top" alt="...">
+    <img src="@/assets/about/three.svg" class="card-img-top" alt="..." data-aos="fade-down">
     <div class="card-body">
       <h5 class="card-title">Custom Timing</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      <p class="card-text">Suspendisse varius enim in eros elementum tristique.</p>
     </div>
   </div>
   <div class="card">
-    <img src="@/assets/about/two.svg" class="card-img-top" alt="...">
+    <img src="@/assets/about/two.svg" class="card-img-top" alt="..." data-aos="fade-down" >
     <div class="card-body">
       <h5 class="card-title">Mobile Optimized</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      <p class="card-text">Lorem ipsum dolor sit amSuspendisse varius enim in eros elementum tristique.</p>
     </div>
   </div>
 </div>

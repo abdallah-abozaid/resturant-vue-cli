@@ -1,12 +1,12 @@
 <template>
-    <div class="about-nine">
+    <div class="about-nine  overflow-hidden">
       <div class="container">
           <div class="row">
               
               <div class="col-md-4">
-                  <img src="@/assets/about/nine.jpg" alt="">
+                  <img src="@/assets/about/nine.jpg" alt="" data-aos="zoom-in">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8" data-aos="fade-left">
                   <p>Aenean Consectetur Porta</p>
                   <p>Parturient Tortor </p>
                   <p>Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -66,6 +66,7 @@ export default {
                  padding-top:10px;
             }
              @include maxsmall{
+               text-align: center;
             }
         p:nth-of-type(1){
             font-size: 13px;

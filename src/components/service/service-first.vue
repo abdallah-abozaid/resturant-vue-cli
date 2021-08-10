@@ -1,5 +1,5 @@
 <template>
-    <div class="service-first">
+    <div class="service-first overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -93,8 +93,11 @@ export default {
         @include maxsmall{
             padding-top: 10px;
         }
+        @include maxmobile{
+            text-align: center;
+        }
         > p:first-of-type{
-            color: #ec294386;
+            color: #f306c8;
             text-transform: uppercase;
             letter-spacing: 4px;
             font-weight: bold;
@@ -132,13 +135,13 @@ export default {
                 font-size: 14px;
             }
              @include maxmobile{
-                font-size: 12px;
+                font-size: 11px;
             }
         }
         > div{
             margin-top: 20px;
             width: 300px;
-            background-color: #ec2943;
+            background:linear-gradient(45deg, #D71172, #620F53);
             padding: 10px 0 5px 60px;
             transform: translateX(-130px);
 
@@ -161,7 +164,9 @@ export default {
             }
             @include maxmobile{
                 font-size: 12px;
-                padding:7px 0 1px 30px;
+                padding: 5px 10px;
+                width: 50%;
+                margin-left: 25%;
             }
             p{
                 color: white;

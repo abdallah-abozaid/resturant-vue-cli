@@ -1,14 +1,14 @@
 <template>
-    <div class="about-five">
+    <div class="about-five  overflow-hidden">
       <div class="container">
           <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-7" data-aos="fade-right">
                   <p>Aenean Consectetur Porta</p>
                   <p>Magna Porta Sit Bibendum</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
               </div>
               <div class="col-md-5">
-                  <img src="@/assets/about/five.png" alt="">
+                  <img src="@/assets/about/five.png" alt="" data-aos="zoom-in">
               </div>
           </div>
       </div>
@@ -64,6 +64,7 @@ export default {
              @include maxmediam{
             }
              @include maxsmall{
+                 text-align: center;
             }
         p:nth-of-type(1){
             font-size: 14px;

@@ -1,12 +1,12 @@
 <template>
     <div class="service-six">
         <div class="container">
-            <p>CONTACT US</p>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p data-aos="zoom-in-down"> <span style="color:#CD1170">CONTACT</span> US</p>
+            <p data-aos="zoom-in-down">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
             <div class="cards">
 
 <div class="row row-cols-1 row-cols-md-3">
-  <div class="col-md-3 col-sm-6">
+  <div class="col-md-3 col-sm-6" data-aos="flip-left">
     <div class="card h-100">
       <div class="icon"><fa-icon :icon="['fas','street-view']"/></div>
     <div class="card-body">
@@ -15,7 +15,7 @@
     </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-6">
+  <div class="col-md-3 col-sm-6" data-aos="flip-left">
     <div class="card h-100">
        <div class="icon"><fa-icon :icon="['fas','phone-alt']"/></div>
     <div class="card-body">
@@ -24,21 +24,21 @@
     </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-6">
+  <div class="col-md-3 col-sm-6" data-aos="flip-left">
     <div class="card h-100">
       <div class="icon"><fa-icon :icon="['fab','telegram-plane']"/></div>
     <div class="card-body">
       <h5 class="card-title">EMAIL ADDRESS</h5>
-      <p class="card-text">info@yoursite.com</p>
+      <p class="card-text">abdallah-resurant@gmail.com</p>
     </div>
     </div>
   </div>
-  <div class="col-md-3 col-sm-6">
+  <div class="col-md-3 col-sm-6" data-aos="flip-left">
     <div class="card h-100">
        <div class="icon"><fa-icon :icon="['fas','globe-americas']"/></div>
     <div class="card-body">
       <h5 class="card-title">WEBSITE</h5>
-      <p class="card-text">yoursite.com</p>
+      <p class="card-text">abdallah_resturant.com</p>
     </div>
     </div>
   </div>
@@ -85,25 +85,17 @@ export default {
     @content;
   }
 }
-@keyframes colors{
-    0%{
-         background: linear-gradient(45deg, #e54d98 , #700f5d);
-    }
-    100%{
-         background: linear-gradient(45deg, #700f5d, #e54d98);
-    }
-}
 @keyframes rotating{
     0%{
-        transform: rotate(0deg);
+        transform: rotate(-10deg);
     }
    
     50%{
-          transform: rotate(30deg);
+          transform: rotate(0deg);
     }
     
     100%{
-      transform: rotate(0deg);
+      transform: rotate(10deg);
     }
 }
 
@@ -131,36 +123,29 @@ export default {
         & > div{
             
             @include maxmobile{
-                        width: 80%;
+                        width: 70%;
                         margin: auto;
                     }
         }
         .card{
             margin-bottom: 10px;
             border: none;
-            animation: colors 2s linear infinite alternate ;
-            background: linear-gradient(45deg, #e54d98, #700f5d);
-            color: white;
-            border-top-left-radius: 100px;
-            border-bottom-right-radius: 100px;
-            &:hover{
-              border-top-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            color: grey;
             transition: all .6s linear;
-            }
             @include maxmediam{
                         padding: 0px;
                     }
             
             .icon {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
                 background-color: #aeaeae7a;
                 border-radius: 50%;
                 margin: 20px auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                color: black;
                 @include maxmediam{
                         width: 80px;
                 height: 80px;
@@ -177,10 +162,10 @@ export default {
                 }
             }
             .card-body{
-                @include maxmediam{
-                        padding: 7px;
-                    }
+              padding:0 7px;
                 h5{
+                  margin-bottom: 4px;
+                  color: black;
                     @include maxlarge{
                         font-size: 18px;
                     }
@@ -189,12 +174,7 @@ export default {
                     }
                     }
                     p{
-                        @include maxlarge{
-                        font-size: 14px;
-                    }
-                    @include maxmediam{
-                        font-size: 13px;
-                    }
+                      font-size: 14px;
                     }
             }
         }

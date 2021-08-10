@@ -1,10 +1,10 @@
 <template>
-    <div class="service-second">
+    <div class="service-second  overflow-hidden">
         <div class="container">
             <!-- <img src="@/assets/service/project-1.jpg" alt="">
             <img src="@/assets/service/project-2.jpg" alt=""> -->
-            <p>OUR PROJECTS</p>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p data-aos="zoom-in-up">OUR <span style="color:#CD1170">services</span></p>
+            <p data-aos="zoom-in-up">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
         <swiper
     :space-between="50"
     loop=true
@@ -19,50 +19,26 @@
             spaceBetween:10
         },
         700:{
-            slidesPerView:2,
+            slidesPerView:3,
             spaceBetween:20
         },
         1000:{
-            slidesPerView:3,
+            slidesPerView:4,
             spaceBetween:20
         }
     }"
   >
-    <swiper-slide><img src="@/assets/service/project-1.jpg" alt=""> 
-    <div class="inner">
-        <p>work tittle</p>
-        <p>work description</p>
-    </div>
+    <swiper-slide><img src="@/assets/service/ser1.jpg" alt=""> 
     </swiper-slide>
-    <swiper-slide><img src="@/assets/service/project-2.jpg" alt="">
-    <div class="inner">
-        <p>work tittle</p>
-        <p>work description</p>
-    </div>
+    <swiper-slide><img src="@/assets/service/ser2.jpg" alt="">
     </swiper-slide>
-    <swiper-slide><img src="@/assets/service/project-3.jpg" alt="">
-    <div class="inner">
-        <p>work tittle</p>
-        <p>work description</p>
-    </div>
+    <swiper-slide><img src="@/assets/service/ser7.jpg" alt="">
     </swiper-slide>
-    <swiper-slide><img src="@/assets/service/project-1.jpg" alt="">
-    <div class="inner">
-        <p>work tittle</p>
-        <p>work description</p>
-    </div>
+    <swiper-slide><img src="@/assets/service/ser4.jpg" alt="">
     </swiper-slide>
-    <swiper-slide><img src="@/assets/service/project-2.jpg" alt="">
-    <div class="inner">
-        <p>work tittle</p>
-        <p>work description</p>
-    </div>
+    <swiper-slide><img src="@/assets/service/ser5.jpg" alt="">
     </swiper-slide>
-    <swiper-slide><img src="@/assets/service/project-3.jpg" alt="">
-    <div class="inner">
-        <p>work tittle</p>
-        <p>work description</p>
-    </div>
+    <swiper-slide><img src="@/assets/service/ser6.jpg" alt="">
     </swiper-slide>
   </swiper>
 
@@ -130,8 +106,11 @@ export default {
 
 //----------------------------------------------------------------------------------
 .service-second{
-    margin: 150px 0;
+    margin: 50px 0;
+    padding: 70px 0 30px;
     text-align: center;
+    background-image: url(~@/assets/service/back2.png);
+    background-size: cover;
     .container{
             overflow: hidden;
     padding-bottom: 100px;
@@ -143,53 +122,14 @@ export default {
 overflow: visible;
 }
     .swiper-slide {
-        position: relative;
         overflow: hidden;
-        
+        border: 1px solid grey;
+        box-shadow: 1px 1px 9px grey;
+        border-radius: 35px;
+        height: 200px;
         img{
             width: 100%;
-            @include maxmobile2{
-            width: 76%;
-            }
-        }
-        &:hover .inner{
-            bottom: 0;
-            transition: all .7s linear;
-        }
-        .inner{
-            position: absolute;
-            bottom: -50%;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background-color: #EC2943;
-            padding-top: 20px;
-            @include maxsmall{
-                       height: 70px;
-                       padding-top: 10px;
-                    }
-            @include maxmobile2{
-            width: 76%;
-            display: block;
-            left: 50%;
-            transform: translateX(-50%);
-            }
-            p{
-                margin-bottom:0px ;
-                color: white;
-                &:first-of-type{
-                    font-size: 24px;
-                    @include maxsmall{
-                        font-size: 18px;
-                    }
-                }
-                &:last-of-type{
-                    font-size: 15px;
-                     @include maxsmall{
-                        font-size: 12px;
-                    }
-                }
-            }
+            height: 200px;
         }
 }
     

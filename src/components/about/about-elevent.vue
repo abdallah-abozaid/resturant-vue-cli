@@ -1,10 +1,10 @@
 <template>
     <div class="about-elevent">
         <div class="first-com">
-            <img src="@/assets/about/elevent.jpg" alt="">
+            <img src="@/assets/about/elevent.jpg" alt="" data-aos="zoom-in">
         </div>
         <div class="second-com">
-            <div class="content">
+            <div class="content" data-aos="flip-up">
                 <p>Ready to get started?</p>
             <input type="submit" value="Download Now">
             <input type="submit" value="Get in Touch">

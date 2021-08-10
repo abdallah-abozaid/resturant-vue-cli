@@ -2,10 +2,10 @@
     <div class="service-seven">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-down">
                     <iframe src="https://www.google.com/maps/d/embed?mid=1Dn05jKVkkFO-1pMcELzTKW1hPWU&hl=en" width="640" height="480"></iframe>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up">
                     <input type="text" placeholder="Your Name">
                     <input type="email" placeholder="Your Email">
                     <input type="text" placeholder="Your subject">
@@ -101,18 +101,16 @@ export default {
             background-color: #CA3F8A;
             border: 2px solid #CA3F8A;
             border-radius: 40px;
-            padding: 15px 30px;
+            padding: 8px 20px;
             color: white;
             font-size: 18px;
-            letter-spacing: 3px;
+            transition: all .5s linear;
             @include maxlarge{
                  padding: 10px;
             }
             &:hover{
                 background-color: #eee;
-                transition: all .5s linear;
             color: #CA3F8A;
-            border: 2px solid #CA3F8A;
             }
         }
     }

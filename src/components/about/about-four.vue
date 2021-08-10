@@ -1,12 +1,12 @@
 <template>
-    <div class="about-four">
+    <div class="about-four  overflow-hidden">
       <div class="container">
           <div class="row">
               
               <div class="col-md-4">
-                  <img src="@/assets/about/four.png" alt="">
+                  <img src="@/assets/about/four.png" alt="" data-aos="zoom-in">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8" data-aos="fade-left">
                   <p>ConsectUltricies </p>
                   <p>Amet Ipsum </p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
@@ -67,6 +67,7 @@ export default {
                  padding-top:10px;
             }
              @include maxsmall{
+                 text-align: center;
             }
         p:nth-of-type(1){
             font-size: 15px;

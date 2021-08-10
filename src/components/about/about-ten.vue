@@ -1,5 +1,5 @@
 <template>
-    <div class="about-ten">
+    <div class="about-ten  overflow-hidden">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -8,16 +8,16 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <fa-icon :icon="['fas','quote-left']"/>
-      <p>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis</p>
+      <fa-icon :icon="['fas','quote-left']" data-aos="zoom-in"/>
+      <p>HeadNulla vitae elit libero. Pus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis</p>
     </div>
     <div class="carousel-item">
-      <fa-icon :icon="['fas','quote-left']"/>
-            <p>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis</p>
+      <fa-icon :icon="['fas','quote-left']" data-aos="zoom-in"/>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis</p>
     </div>
     <div class="carousel-item">
-      <fa-icon :icon="['fas','quote-left']"/>
-            <p>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis</p>
+      <fa-icon :icon="['fas','quote-left']" data-aos="zoom-in"/>
+            <p>HeadNulla vitae elit libero, a pharetra augue. Duis mollis, avida at eget metus. Etiam porta sem malesuada magna mollis</p>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -38,7 +38,6 @@ export default {
 }
 </script>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 //---------------------------------------------------------------------------
 @mixin maxlarge {
   @media (max-width: 1200px) {
@@ -87,30 +86,31 @@ export default {
                 font-size: 40px;
             }
                 path {
-                    fill: rgb(173, 173, 173);
+                    fill: black;
                 }
             }
         }
        .carousel-indicators{
            bottom: -40px;
            li{
-               background: rgb(173, 173, 173);
-               border-radius: 50%;
-               width: 15px;
-               height: 0px!important;
+               background: black;
+               width: 20px;
+               height:8px!important;
+               padding: 0;
+               border: 0;
            }
        }
     .carousel-item{
         padding: 10px 20%;
         text-align: center;
+        height: 300px;
          @include maxsmall{
                 padding: 10px 15%;
             }
         
         p{
-            font-size: 30px;
+            font-size: 22px;
             color: #575757;
-            font-family: 'Dancing Script', cursive;
             @include maxmediam{
                 font-size: 25px;
             }

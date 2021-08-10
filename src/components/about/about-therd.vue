@@ -1,14 +1,14 @@
 <template>
-    <div class="about-therd">
+    <div class="about-therd  overflow-hidden">
       <div class="container">
           <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-7 " data-aos="fade-right">
                   <p>Aenean Consectetur</p>
                   <p>Cay sociis nato que penatibus et</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. </p>
               </div>
               <div class="col-md-5">
-                  <img src="@/assets/about/therd.png" alt="">
+                  <img src="@/assets/about/therd.png" alt="" data-aos="zoom-in">
               </div>
           </div>
       </div>
@@ -67,7 +67,9 @@ export default {
             }
              @include maxsmall{
                padding:0% 20px 0;
+               text-align: center;
             }
+             
         p:nth-of-type(1){
             font-size: 16px;
             color: #a8a8a8;

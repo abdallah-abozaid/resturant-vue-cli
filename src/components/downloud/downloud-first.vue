@@ -1,17 +1,17 @@
 <template>
     <div class="downloud-first">
         <div class="container">
-            <p>Pricing Plans</p>
-            <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+            <p data-aos="fade-down"> <span style="color:#CD1170">downloud</span> My App</p>
+            <p data-aos="fade-down">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
             <div class="row">
-                <div class="col-md-6 fst">
+                <div class="col-md-6 fst" data-aos="fade-right">
                     <p>Basic</p>
                     <p>$19.99</p>
                     <p>5 Users</p>
                     <p>20 Projects</p>
                     <input type="submit" value="Order Now">
                 </div>
-                <div class="col-md-6 sec">
+                <div class="col-md-6 sec" data-aos="fade-left">
                     <p>Professional</p>
                     <p>$199.99</p>
                     <p>100 Users</p>

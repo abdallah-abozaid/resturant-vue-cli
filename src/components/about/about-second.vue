@@ -1,12 +1,12 @@
 <template>
-    <div class="about-second">
+    <div class="about-second  overflow-hidden">
        <div class="container">
-           <div class="first-comp">
+           <div class="first-comp" data-aos="fade-down">
                <p>Aenean Consectetur Porta</p>
                <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
            </div>
            <div class="second-com">
-               <img src="@/assets/about/second.png" alt="">
+               <img src="@/assets/about/second.png" alt="" data-aos="fade-down">
            </div>
        </div>
     </div>

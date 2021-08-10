@@ -13,6 +13,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(faCog,faStar,faHome,faBriefcase,faCogs,faCamera,faGlobeAmericas,faTelegramPlane,faPhoneAlt,faStreetView,faCommentDots,faLongArrowAltDown,faQuoteLeft,faChevronLeft,faChevronRight,faFacebookF,faTwitter,faGooglePlusG,faInstagram)
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({})
 
 
 

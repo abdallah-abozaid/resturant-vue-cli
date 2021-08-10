@@ -1,14 +1,14 @@
 <template>
     <div class="downloud-therd">
         <div class="container">
-            <p>Why choose us?</p>
-            <p>Everyday we work hard to make life of our clients better and happier</p>
+            <p data-aos="fade-down">Why  <span style="color:#CD1170">choose</span> us?</p>
+            <p data-aos="fade-down">Everyday we work hard to make life of our clients better and happier</p>
         <div class="row">
             <div class="col-md-5">
-                <img src="@/assets/downloud/a.jpg" alt="">
+                <img src="@/assets/downloud/a.jpg" alt="" data-aos="zoom-in">
             </div>
             <div class="col-md-7">
-                <div class="row">
+                <div class="row" data-aos="zoom-in-up">
                     <div class="col-8">
                         <p>Quick response</p>
                         <p>Emergency response time is one hour or less guaranteed. A live person will answer your call, or you can enter a service ticket yourself .</p>
@@ -17,7 +17,7 @@
                         <div class="icon"><fa-icon :icon="['fas','star']"/></div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="zoom-in-up">
                     <div class="col-8">
                         <p>Quick response</p>
                         <p>Emergency response time is one hour or less guaranteed. A live person will answer your call, or you can enter a service ticket yourself .</p>
@@ -26,7 +26,7 @@
                         <div class="icon"><fa-icon :icon="['fas','comment-dots']"/></div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="zoom-in-up">
                     <div class="col-8">
                         <p>Quick response</p>
                         <p>Emergency response time is one hour or less guaranteed. A live person will answer your call, or you can enter a service ticket yourself .</p>

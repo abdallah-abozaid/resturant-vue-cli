@@ -1,20 +1,20 @@
 <template>
-    <div class="about-seven">
+    <div class="about-seven  overflow-hidden">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6" data-aos="fade-down">
                    <p>+12k</p>
                    <p>Nibh Elit Tristique</p> 
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6" data-aos="fade-up">
                     <p>84</p>
                     <p>Aenean Condimentum</p>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6" data-aos="fade-down">
                     <p>3,07</p>
                     <p>Quam Inceptos</p>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3 col-6" data-aos="fade-up">
                     <p>24h</p>
                     <p>Ullamcorper </p>
                 </div>

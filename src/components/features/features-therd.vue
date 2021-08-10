@@ -2,15 +2,15 @@
     <div class="features-therd">
         <div class="container">
         <div class="row">
-            <div class="first-com col-md-6">
-                <p>Usage data</p>
-                <p>Quis istud possit, inquit, negare? Videamus animi partes, quarum est conspectus illustrior; Illa sunt similia: hebes acies est cuipiam oculorum, corpore alius senescit; Non enim, si omnia non sequebatur.</p>
+            <div class="first-com col-md-6" data-aos="fade-up">
+                <p> cooperate to serve you</p>
+                <p>Quis imi partes, quarum est conspectus illustrior; Illa sunt similia: hebes acies est cuipiam oculorum, corpore alius senescit; Non enim, si omnia non sequebatur.</p>
                 <hr>
-                <p>Quae quo sunt excelsiores, eo dant clariora indicia naturae. Causa autem fuit huc veniendi ut quosdam hinc.</p>
+                <p>Quae quo sunt excelsiores, eo dant clarrae.  huc veniendi ut quosdam hinc.</p>
                 <p>Carry Andersen, COO at Stripe</p>
             </div>
             <div class="sec-com col-md-6">
-                <img src="@/assets/features/data.svg" alt="">
+                <img src="@/assets/features/fetur1.svg" alt="" data-aos="fade-up">
             </div>
         </div>
     </div>
@@ -80,25 +80,28 @@ export default {
         @include maxlarge{
            padding-top: 2%;
             }
+        @include maxsmall{
+           text-align: center;
+            }
         p:first-of-type{
-            font-size: 45px;
+            font-size: 44px;
             font-family: 'Orelega One', cursive;
             @include maxlarge{
-                font-size: 40px;
+                font-size: 39px;
             }
              @include maxmediam{
-               font-size: 34px;
+               font-size: 33px;
             }
         }
         p:nth-of-type(2){
             color: rgb(107, 107, 107);
-            font-size: 19px;
+            font-size: 15px;
             font-family: 'Open Sans', sans-serif;
             @include maxlarge{
-                font-size: 17px;
+                font-size: 14px;
             }
              @include maxmediam{
-               font-size: 15px;
+               font-size: 13px;
             }
         }
         p:nth-of-type(3){

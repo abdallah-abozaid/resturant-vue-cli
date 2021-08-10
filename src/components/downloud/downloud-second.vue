@@ -2,7 +2,7 @@
     <div class="downloud-second">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 pad">
+                <div class="col-md-6 pad" data-aos="zoom-in">
                     <p>Contact Us</p>
                     <p>Need Amazing Design?</p>
                     <p>Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus . Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row row-cols-1 row-cols-md-2">
-  <div class="col mb-4">
+  <div class="col mb-4" data-aos="flip-down">
     <div class="card one">
         <div class="icon">
             <fa-icon :icon="['fas','cogs']"/>
@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  <div class="col mb-4">
+  <div class="col mb-4" data-aos="flip-down">
     <div class="card two">
         <div class="icon">
             <fa-icon :icon="['fas','camera']"/>
@@ -32,7 +32,7 @@
       </div>
     </div>
   </div>
-  <div class="col mb-4">
+  <div class="col mb-4" data-aos="flip-down">
     <div class="card three">
           <div class="icon">
             <fa-icon :icon="['fas','briefcase']"/>
@@ -43,7 +43,7 @@
       </div>
     </div>
   </div>
-  <div class="col mb-4">
+  <div class="col mb-4" data-aos="flip-down">
     <div class="card four">
           <div class="icon">
             <fa-icon :icon="['fas','home']"/>

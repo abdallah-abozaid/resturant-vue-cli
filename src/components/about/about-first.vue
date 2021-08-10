@@ -1,18 +1,18 @@
 <template>
-    <div class="about-first" >
+    <div class="about-first  overflow-hidden" >
        <div class="container">
            <fa-icon :icon="['fas','long-arrow-alt-down']" @click="smooth()"/>
            <div class="row">
                <div class="col-md-7">
-                  <p class="tittle">
+                  <p class="tittle" data-aos="fade-right">
                       Momentum
                   </p>
-                  <p class="desc">Launch your product — and savor the momentum</p>
-                  <input type="submit" value="Get the App">
+                  <p class="desc" data-aos="fade-right">Launch your product — and savor the momentum</p>
+                  <input type="submit" value="Get the App" data-aos="fade-right">
                   
                </div>
                <div class="col-md-5">
-                   <img src="@/assets/about/first.png" alt="">
+                   <img src="@/assets/about/first.png" alt="" data-aos="fade-left">
                </div>
            </div>
        </div>

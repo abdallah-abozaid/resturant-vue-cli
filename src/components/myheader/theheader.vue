@@ -11,16 +11,16 @@
   </button>
   <div class="collapse navbar-collapse " id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item active" @click="actived($event)">
         <router-link class="nav-link" to="/">About</router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" @click="actived($event)">
        <router-link class="nav-link" to="/service">Service</router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" @click="actived($event)">
         <router-link class="nav-link" to="/features">Features</router-link>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" @click="actived($event)">
         <router-link class="nav-link" to="/downloud">Download</router-link>
       </li>
     </ul>
@@ -49,8 +49,15 @@ export default {
             }else{
                event.target.parentElement.classList.toggle("clicked"); 
             }
+        },
+        actived:function(event){
+          var links=document.querySelectorAll(".navbar-nav .nav-item");
+          for(var i=0;i<links.length;i++){
+            links[i].classList.remove("active")
+          }
+          event.target.classList.add("active");
         }
-    }
+    },
 }
 </script>
 <style lang="scss">
@@ -94,16 +101,20 @@ export default {
 .myheader .navbar-expand-lg .navbar-collapse {
     flex-direction: row-reverse;
 }
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active{
+    border-bottom: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.247);
+}
 .myheader .navbar-light .navbar-nav .nav-link{
     color: white!important;
     font-size: 17px;
     margin-left: 20px;
     text-align: center;
     font-family: 'Lobster', cursive;
-    border-radius: 10px;
     padding-bottom: 3px;
     &:hover{
-      border-bottom: 1px solid white;
+     border-bottom: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.247);
     }
     @include maxmediam{
       padding-bottom: 1px;

@@ -1,25 +1,24 @@
 <template>
     <div class="service-four">
         <div class="container">
-            <p>OUR STAFF</p>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p data-aos="zoom-in-down">OUR  <span style="color:#CD1170">Manegers</span></p>
+            <p data-aos="zoom-in-down">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
             <div class="staffs">
                 <div class="row">
-                <div class="staf col-6 col-md-3">
+                <div class="staf col-6 col-md-3" data-aos="zoom-in">
                     <img src="@/assets/service/a.jpg" alt="">
                     <p>Alicia Henderson</p>
-                    <p>GRAPHIC DESIGNER</p>
+                    <p>restaurant manager</p>
                     <div class="icons">
                        <a href="#"> <fa-icon :icon="['fab','twitter']"/></a>
-                       <a href="#"><fa-icon :icon="['fab','facebook-f']"/></a>
                        <a href="#"><fa-icon :icon="['fab','google-plus-g']"/></a>
                        <a href="#">  <fa-icon :icon="['fab','instagram']"/></a>
                     </div>
                     </div>
-                <div class="staf col-6 col-md-3">
+                <div class="staf col-6 col-md-3" data-aos="zoom-in-up">
                     <img src="@/assets/service/aa.jpg" alt="">
                     <p>Alicia Henderson</p>
-                    <p>GRAPHIC DESIGNER</p>
+                    <p>head Reservation Services</p>
                     <div class="icons">
                         <a href="#"> <fa-icon :icon="['fab','twitter']"/></a>
                        <a href="#"><fa-icon :icon="['fab','facebook-f']"/></a>
@@ -27,26 +26,21 @@
                        <a href="#">  <fa-icon :icon="['fab','instagram']"/></a>
                     </div>
                     </div>
-                <div class="staf col-6 col-md-3">
+                <div class="staf col-6 col-md-3" data-aos="zoom-in">
                     <img src="@/assets/service/aaa.jpg" alt="">
                     <p>Alicia Henderson</p>
-                    <p>GRAPHIC DESIGNER</p>
+                    <p>Head chef</p>
                     <div class="icons">
                         <a href="#"> <fa-icon :icon="['fab','twitter']"/></a>
                        <a href="#"><fa-icon :icon="['fab','facebook-f']"/></a>
-                       <a href="#"><fa-icon :icon="['fab','google-plus-g']"/></a>
-                       <a href="#">  <fa-icon :icon="['fab','instagram']"/></a>
                     </div>
                     </div>
-                <div class="staf col-6 col-md-3">
+                <div class="staf col-6 col-md-3" data-aos="zoom-in-up">
                     <img src="@/assets/service/aaaa.jpeg" alt="">
                     <p>Alicia Henderson</p>
-                    <p>GRAPHIC DESIGNER</p>
+                    <p>head waiters</p>
                     <div class="icons">
                         <a href="#"> <fa-icon :icon="['fab','twitter']"/></a>
-                       <a href="#"><fa-icon :icon="['fab','facebook-f']"/></a>
-                       <a href="#"><fa-icon :icon="['fab','google-plus-g']"/></a>
-                       <a href="#">  <fa-icon :icon="['fab','instagram']"/></a>
                     </div>
                     </div>
                 </div>
@@ -132,6 +126,7 @@ export default {
             }
             p:first-of-type{
                 font-size: 23px;
+                margin-bottom: 4px;
                 @include maxlarge{
                 font-size: 21px;
             }
@@ -143,10 +138,8 @@ export default {
             }
             }
             p:last-of-type{
-                color: #EC2943;
-                 @include maxlarge{
+                color: #83105C;
                 font-size: 15px;
-            }
             @include maxmediam{
                 font-size: 13px;
             }
